@@ -1,0 +1,114 @@
+@import "../../../styles/variables";
+
+.navbarContainer {
+  height: auto;
+  line-height: 1rem;
+  background-color: $placeholder-grey;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.75rem 0.9375rem;
+
+    .navbarLogo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      color: $dark;
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+
+      .hamburgerMenu {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        cursor: pointer;
+      }
+    }
+
+    .navbarMenu {
+      display: none;
+      width: 100%;
+      margin-top: 1.25rem;
+
+      ul {
+        list-style-type: none;
+      }
+
+      &.showMenu {
+        display: block;
+      }
+
+      li:not(:first-child) {
+        margin-top: 1rem;
+      }
+
+      a {
+        padding: 0;
+
+        &.account {
+          border-radius: 50%;
+          color: white;
+          background: grey;
+          padding: 4px;
+          width: 30px;
+          height: 30px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @include md {
+    .navbar {
+      padding: 1.25rem 0.9375rem;
+
+      .navbarLogo {
+        width: auto;
+
+        .hamburgerMenu {
+          display: none;
+        }
+      }
+
+      .navbarMenu {
+        margin: 0;
+        width: auto;
+        display: block;
+
+        &.showMenu {
+          display: block;
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+
+          li:not(:first-child) {
+            margin-top: 0;
+            margin-left: 2rem;
+          }
+
+          a {
+            &.account {
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.isActive {
+  color: $primary;
+}

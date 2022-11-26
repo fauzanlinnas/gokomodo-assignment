@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+.auth {
+  button {
+    > div {
+      margin-right: 10px;
+    }
+
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.signUpButton {
+  border-radius: 4px;
+  background: $background-grey;
+
+  &:hover {
+    background: $label-grey;
+  }
+}

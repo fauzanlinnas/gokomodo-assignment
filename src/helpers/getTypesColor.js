@@ -1,0 +1,21 @@
+export const getTypesColor = (type) => {
+
+  if (type === 'grass') return 'type-grass'
+  else if (type === 'poison') return 'type-poison'
+  else if (type === 'fire') return 'type-fire'
+  else if (type === 'flying') return 'type-flying'
+  else if (type === 'water') return 'type-water'
+  else if (type === 'bug') return 'type-bug'
+  else if (type === 'normal') return 'type-normal'
+  else if (type === 'electric') return 'type-electric'
+  else if (type === 'ice') return 'type-ice'
+  else if (type === 'fighting') return 'type-fighting'
+  else if (type === 'ground') return 'type-ground'
+  else if (type === 'psychic') return 'type-psychic'
+  else if (type === 'rock') return 'type-rock'
+  else if (type === 'ghost') return 'type-ghost'
+  else if (type === 'dragon') return 'type-dragon'
+  else if (type === 'dark') return 'type-dark'
+  else if (type === 'steel') return 'type-steel'
+  else if (type === 'fairy') return 'type-fairy'
+}

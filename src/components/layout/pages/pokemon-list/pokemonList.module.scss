@@ -1,0 +1,9 @@
+.pokemonList {
+  display: flex;
+
+  .pokemon {
+    min-width: 120px;
+    margin-right: 10px;
+    background: red;
+  }
+}
