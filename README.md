@@ -1,7 +1,4 @@
 Buat jalan locally: set .env sama persis dengan .env.example
-Hosted at: https://frosty-varahamihira-046a52.netlify.app/
-
-
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
